@@ -28,8 +28,10 @@ var resta=null
 var multiplicar=null;
 var division= null
 
-var numero1= parseInt(prompt("Introduce el primer número"));
-var numero2= parseInt(prompt("Introduce el segundo número"));
+numero1= parseInt(prompt("Introduce el primer número"));
+numero2= parseInt(prompt("Introduce el segundo número"));
+//tambien se puede poner number
+// var numero2= Number(prompt("Introduce el segundo número"));
 
 // numero1= 0;
 // numero1= 0;
@@ -49,3 +51,16 @@ console.log(multiplicar);
 prompt("La division de "+numero1+" y "+numero2+ " es: ")
 division=numero1/numero2;
 console.log(division);
+
+/**
+ * 
+ * Otra opción para que la salida fuera en el documento HTML
+ * 
+ * console.log(a+b)
+ * 
+ * console.write(a+b +"<br/>")
+ * console.write(a-b +"<br/>")
+ * console.write(a*b +"<br/>")
+ * console.write(a/b +"<br/>")
+ * 
+ */

@@ -24,8 +24,8 @@
 var numero1= 0;
 var numero2= 0;
 
-var numero1= parseInt(prompt("Introduce el primer número"));
-var numero2= parseInt(prompt("Introduce el segundo número"));
+numero1= parseInt(prompt("Introduce el primer número"));
+numero2= parseInt(prompt("Introduce el segundo número"));
 
     if(numero1>numero2){
         console.log(numero1+" Es mayor a "+numero2);
@@ -34,5 +34,5 @@ var numero2= parseInt(prompt("Introduce el segundo número"));
 
         console.log("los números "+ numero1 + numero2+ " son iguales");
     }else{
-        console.log("El numero 2 es mayor");
+        console.log("El numero2 es mayor");
     }

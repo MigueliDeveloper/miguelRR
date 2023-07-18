@@ -16,13 +16,20 @@ FinProceso
 var numeroNinos=0;
 var numeroNinas=0;
 
-var numeroNinos= parseInt(prompt("Introduce el numero de niños"));
-var numeroNinas= parseInt(prompt("Introduce el numero de niñas"));
+numeroNinos= parseInt(prompt("Introduce el numero de niños"));
+numeroNinas= parseInt(prompt("Introduce el numero de niñas"));
 
 // Calculamos el porcentaje
-var porcentajeNinos = (numeroNinos * 100) / (numeroNinos  + numeroNinas);
+var porcentajeNinos = (numeroNinos * 100) / (numeroNinos + numeroNinas);
 let porcentajeNinas = 100 - porcentajeNinos;
 
+// var totalnino = ninos+ninas;
+// var porcentNinos = (nino*100)/totalNinos;
+// var porcentNinas = (nina*100)/totalNinas
+
+// console.log("El porcetanje de niñas "+porcentninas);
+//console.log("El porcetanje de niñas "+porcentninas);
+ 
 console.log("Hay un " + porcentajeNinos + "% de niños");
 console.log("Hay un " + porcentajeNinas  + "% de niñas");
 
