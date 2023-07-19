@@ -20,7 +20,7 @@ FinProceso
  */
 
 var importeCompra= 0;
-var descuento= 0.85;
+var descuento= 0.85; //Descuento del 15%
 var total= 0;
 var mes= " ";
 

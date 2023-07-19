@@ -22,24 +22,64 @@ function tablaDeMultiplicar(){
     
     for(let i=0; i<=10; i++){
 
-        document.write("<p> La tabla de multiplicar de </p>"+ i);
+        document.write("<p> La tabla de multiplicar de "+ i+"</p>");
         
         for(let j=0; j<=10; j++){
-            document.write("<p>"+i+" x "+j+" = "+ i*j);
+            document.write("<p>"+i+" x "+j+" = "+ i*j+"</p>");
 
         }
     }
 
-    for(let i = 0; i < seleccionTabla; i++){
+    for(let i = 0; i<seleccionTabla; ++i){
         
-        document.write("Tabla de multiplicar del "+i);
+        document.write("Tabla de multiplicar del "+i+"</p>");
 
-        for (let j = 0; j <= 10; j++) {
-            document.write(i +" x "+ j +"="+ i * j);
+        for (let j = 0; j <=10; j++) {
+            document.write(i +" x "+ j +"="+ i * j+"</p>");
         }
     }
 }
 
 tablaDeMultiplicar();
 
+/**
+ * function mostrarTablaMultiplicar(numero) {
+  console.log(`Tabla de multiplicar del ${numero}:`);
+  for (let i = 0; i <= 10; i++) {
+    console.log(`${numero} x ${i} = ${numero * i}`);
+  }
+}
+
+function mostrarTodasLasTablas() {
+  for (let i = 0; i <= 10; i++) {
+    console.log(`Tabla de multiplicar del ${i}:`);
+    for (let j = 0; j <= 10; j++) {
+      console.log(`${i} x ${j} = ${i * j}`);
+    }
+    console.log('-------------------');
+  }
+}
+
+function mostrarTablasAnteriores(numero) {
+  console.log(`Tablas de multiplicar anteriores a ${numero}:`);
+  for (let i = 0; i < numero; i++) {
+    console.log(`Tabla de multiplicar del ${i}:`);
+    for (let j = 0; j <= 10; j++) {
+      console.log(`${i} x ${j} = ${i * j}`);
+    }
+    console.log('-------------------');
+  }
+}
+
+var numeroIngresado = parseInt(prompt("Ingresa un número del 0 al 10:"));
+
+if (numeroIngresado >= 0 && numeroIngresado <= 10) {
+  mostrarTablaMultiplicar(numeroIngresado);
+  mostrarTodasLasTablas();
+  mostrarTablasAnteriores(numeroIngresado);
+} else {
+  console.log("Número inválido. Por favor, ingresa un número del 0 al 10.");
+}
+
+ */
   
