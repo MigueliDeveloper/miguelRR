@@ -18,7 +18,7 @@
 
 var importeCompra= 0;
 var descuentoEneroFebrero=0.80 ; //Descuento del 20% Enero y Feberero
-var descuentoJulioAgosto= 0.85; //Descuento del 15% Julio y Agosto
+var descuentoJulioAgostoOctubre= 0.85; //Descuento del 15% Julio y Agosto
 var descuentoNoviembreDiciembre= 0.75; //Descuento del 25% Noviembre y Diciembre
 var total= 0;
 var mes= " ";
@@ -29,8 +29,8 @@ mes = (prompt("Introduce el mes: "));
     if((mes.toLowerCase()=="enero")||(mes.toLowerCase()=="febrero")){
         total= importeCompra*descuentoEneroFebrero;
 
-    }else if((mes.toLowerCase()=="julio")||(mes.toLowerCase()=="agosto")){
-        total=importeCompra*descuentoJulioAgosto;
+    }else if((mes.toLowerCase()=="julio")||(mes.toLowerCase()=="agosto")||(mes.toLowerCase()=="octubre")){
+        total=importeCompra*descuentoJulioAgostoOctubre;
 
     }else if((mes.toLowerCase()=="noviembre")||(mes.toLowerCase()=="diciembre")){
         total=importeCompra*descuentoNoviembreDiciembre;
