@@ -11,17 +11,17 @@ mes = (prompt("Introduce el mes: "));
 mes= (mes.toLowerCase());
 
 switch(mes){
-    case "enero" && "febrero":
+    case "enero": case "febrero":
         total= importeCompra*descuentoEneroFebrero;
         document.write("<p>El total de la compra es: "+total+"</p>")
     break;
 
-    case "julio" && "agosto" && "octubre":
+    case "julio": case "agosto": case "octubre":
         total=importeCompra*descuentoJulioAgostoOctubre;
         document.write("<p>El total de la compra es: "+total+"</p>")
     break;
 
-    case "noviembre" && "diciembre":
+    case "noviembre": case "diciembre":
         total=importeCompra*descuentoNoviembreDiciembre;
         document.write("<p>El total de la compra es: "+total+"</p>")
     break;
