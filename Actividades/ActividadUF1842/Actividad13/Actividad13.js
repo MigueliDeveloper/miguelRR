@@ -14,61 +14,48 @@ function operadores(){
   
     // Realiza la suma
     suma = numero1 + numero2;
-    document.getElementById("resultado").innerText = "La suma de " + numero1 + " y " + numero2 + " es: " + suma;
+    document.getElementById("resultadoSuma").innerText = "La suma de " + numero1 + " + " + numero2 + " es: " + suma;
     
     //Realiza la resta 
     resta=numero1-numero2;
-    document.getElementById("resultado").innerText = "La resta de " + numero1 + " y " + numero2 + " es: " + resta;
+    document.getElementById("resultadoResta").innerText = "La resta de " + numero1 + " - " + numero2 + " es: " + resta;
 
-    prompt("La multiplicacion de "+numero1+" y "+numero2+ " es: ")
     multiplicar=numero1*numero2;
-    console.log(multiplicar);
+    document.getElementById("resultadoMultiplicacion").innerText = "La multiplicacion de "+numero1+" * "+numero2+ " es: "+multiplicar;
 
-    prompt("La division de "+numero1+" y "+numero2+ " es: ")
     division=numero1/numero2;
-    console.log(division);
+    document.getElementById("resultadoDivision").innerText = "La division de "+numero1+" / "+numero2+ " es: "+division;
 }
 
-
-
-
-
-
-// Actividad 12
-function comprobar(){
-    let operador=document.getElementById("operadores").value;
-    resultado = eval(operador);
-    document.getElementById("resultado").innerHTML="Resultado: "+resultado;
-}
-
-/**
- * // Actividad 3
+// Actividad 3
 function compararNumeros(){
     var numero1= 0;
     var numero2= 0;
 
-    numero1= parseInt(prompt("Introduce el primer número"));
-    numero2= parseInt(prompt("Introduce el segundo número"));
+    numero1= parseInt(document.getElementById("introducirNumero1").value);
+    numero2= parseInt(document.getElementById("intorducirNumero2").value);
 
     if(numero1>numero2){
-        console.log(numero1+" Es mayor a "+numero2);
-
+        document.getElementById("ResultadoNumero1Mayor").innerText= numero1+" es mayor a "+numero2;
+       
     }else if(numero1==numero2){
-
-        console.log("los números "+ numero1 + numero2+ " son iguales");
+  
+        document.getElementById("ResultadoNumerosIguales").inneText= "Los números "+ numero1 + numero2+ " son iguales";
     }else{
-        console.log("El numero2 es mayor");
+
+        document.getElementById("ResultadoNumero2Mayor").innerText= "El numero2 es mayor";
+
     }
 
 }
 
-// Actividad 4
+//Actividad 4
 function porcentajeNinos(){
     var numeroNinos=0;
     var numeroNinas=0;
 
-    numeroNinos= parseInt(prompt("Introduce el numero de niños"));
-    numeroNinas= parseInt(prompt("Introduce el numero de niñas"));
+    numeroNinos= parseInt(document.getElementById("introducirNumeroIllos").value);
+    numeroNinas= parseInt(document.getElementById("introducirNumeroIllas").value);
 
     // Calculamos el porcentaje
     var porcentajeNinos = (numeroNinos * 100) / (numeroNinos + numeroNinas);
@@ -80,12 +67,10 @@ function porcentajeNinos(){
 
     // console.log("El porcetanje de niñas "+porcentninas);
     //console.log("El porcetanje de niñas "+porcentninas);
-    
-    console.log("Hay un " + porcentajeNinos + "% de niños");
-    console.log("Hay un " + porcentajeNinas  + "% de niñas");
 
+    document.getElementById("ResultadoPorcentajeIllos").innerText="Hay un " + porcentajeNinos + "% de niños"
+    document.getElementById("ResultadoPorcentajeIllas").innerText="Hay un " + porcentajeNinas  + "% de niñas"
 }
-    
 
 // Actividad 5
 function descuentoTiendaOctubre(){
@@ -95,8 +80,9 @@ function descuentoTiendaOctubre(){
     var total= 0;
     var mes= " ";
 
-    importeCompra = parseFloat(prompt("Escribe el importe de la compra: "));
-    mes = (prompt("Introduce el mes: "));
+    importeCompra = parseFloat(document.getElementById("introducirImporteCompra").value);
+
+    mes = (document.getElementById("introducirMes").value);
 
         if(mes.toLowerCase()=="octubre"){
 
@@ -105,16 +91,15 @@ function descuentoTiendaOctubre(){
             total=importeCompra;
         }
 
-        document.write("<p>El total de la compra es: "+total+"</p>")
+    document.getElementById("totalCompra").innerText="El total de la compra es: "+total
 }
-
 
 // Actividad 6
 function validarClave(){
 
     var clave = 123456;
 
-    clave= parseInt(prompt("Introduzca la clave. Tiene tres intentos"))
+    clave= parseInt(document.getElementById("introducirClave").value);
 
     
     if(clave == 123456){
@@ -129,8 +114,28 @@ function validarClave(){
     }  
 } 
 
-// Actividad 9
+// Actividad 6. Mienteme pinocho mienteme.
+function validarClaveSegundaVersion() {
+    var clave = 123456;
+    var inputClave = document.getElementById("claveInput").value;
 
+    if (parseInt(inputClave) === clave) {
+        document.getElementById("resultado").textContent = "La contraseña es correcta";
+    } else {
+        for (var i = 2; i > 0; i--) {
+            inputClave = parseInt(prompt("Introduzca la clave. Le quedan: " + i + " intentos"));
+            if (inputClave === clave) {
+                document.getElementById("resultado").textContent = "La contraseña es correcta";
+                return;
+            }
+        }
+        document.getElementById("resultado").textContent = "Ha agotado todos los intentos.";
+    }
+
+}
+
+// Intentar cuando se dé los arrays
+// Actividad 9
 function tablaDeMultiplicar(){
     var seleccionTabla=0;
     
@@ -163,39 +168,57 @@ function tablaDeMultiplicar(){
 }
 
 // Actividad 10
+function granDescuentoTienda(){
+    var importeCompra= 0;
+    var descuentoEneroFebrero=0.80 ; //Descuento del 20% Enero y Feberero
+    var descuentoJulioAgostoOctubre= 0.85; //Descuento del 15% Julio y Agosto
+    var descuentoNoviembreDiciembre= 0.75; //Descuento del 25% Noviembre y Diciembre
+    var total= 0;
+    var mes= " ";
 
-var importeCompra= 0;
-var descuentoEneroFebrero=0.80 ; //Descuento del 20% Enero y Feberero
-var descuentoJulioAgostoOctubre= 0.85; //Descuento del 15% Julio y Agosto
-var descuentoNoviembreDiciembre= 0.75; //Descuento del 25% Noviembre y Diciembre
-var total= 0;
-var mes= " ";
+    importeCompra = parseFloat(document.getElementById("importe").value)
+    mes = (document.getElementById("mes").value)
+    mes= (mes.toLowerCase());
 
-importeCompra = parseFloat(prompt("Escribe el importe de la compra: "));
-mes = (prompt("Introduce el mes: "));
-mes= (mes.toLowerCase());
+    switch(mes){
+        case "enero": case "febrero":
+            total= importeCompra*descuentoEneroFebrero;
+            document.getElementById("totalDescuento1").innerText="El total de la compra es: "+total
+        break;
 
-switch(mes){
-    case "enero": case "febrero":
-        total= importeCompra*descuentoEneroFebrero;
-        document.write("<p>El total de la compra es: "+total+"</p>")
-    break;
+        case "julio": case "agosto": case "octubre":
+            total=importeCompra*descuentoJulioAgostoOctubre;
+            document.getElementById("totalDescuento2").innerText="El total de la compra es: "+total
 
-    case "julio": case "agosto": case "octubre":
-        total=importeCompra*descuentoJulioAgostoOctubre;
-        document.write("<p>El total de la compra es: "+total+"</p>")
-    break;
+            // document.write("<p>El total de la compra es: "+total+"</p>")
+        break;
 
-    case "noviembre": case "diciembre":
-        total=importeCompra*descuentoNoviembreDiciembre;
-        document.write("<p>El total de la compra es: "+total+"</p>")
-    break;
+        case "noviembre": case "diciembre":
+            total=importeCompra*descuentoNoviembreDiciembre;
+            document.getElementById("totalDescuento3").innerText="El total de la compra es: "+total
+            // document.write("<p>El total de la compra es: "+total+"</p>")
+        break;
 
-    default:
-        total=importeCompra;
-        document.write("<p>El total de la compra es: "+total+"</p>")
-    break;
+        default:
+            total=importeCompra;
+            document.getElementById("totalSinDescuento").innerText="El total de la compra es: "+total
+            // document.write("<p>El total de la compra es: "+total+"</p>")
+        break;
+    }
 }
+
+// Actividad 12
+function comprobar(){
+    let operador=document.getElementById("operadores").value;
+    resultado = eval(operador);
+    document.getElementById("resultado").innerHTML="Resultado: "+resultado;
+}
+
+/**
+ * 
+
+// 
+    
 
 //Actividad 11
 var idPersonal
