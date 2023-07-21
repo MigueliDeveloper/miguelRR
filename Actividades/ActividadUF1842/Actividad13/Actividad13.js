@@ -18,10 +18,7 @@ function operadores(){
     
     //Realiza la resta 
     resta=numero1-numero2;
-    document.getElementById("resultado").innerText = "La suma de " + numero1 + " y " + numero2 + " es: " + resta;
-    // prompt("La resta de "+numero1+" y "+numero2+ " es: ");
-    
-    // console.log(resta);
+    document.getElementById("resultado").innerText = "La resta de " + numero1 + " y " + numero2 + " es: " + resta;
 
     prompt("La multiplicacion de "+numero1+" y "+numero2+ " es: ")
     multiplicar=numero1*numero2;
