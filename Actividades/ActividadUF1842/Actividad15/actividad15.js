@@ -21,9 +21,5 @@ function verNombres(){
     }
     // document.getElementById("resultado").appendChild(ans);
     // document.getElementById("resultado").innerHTML="Indice del array: "+nombres;
-
-
-
-
 }
 

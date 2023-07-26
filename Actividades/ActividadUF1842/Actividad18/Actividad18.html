@@ -7,7 +7,7 @@
 </head>
 <body>
     
-    <form action="" name="formulario">
+    <form name="formulario" id="alumnoForm">
         <!-- Código -->
         <label for="codigo"></label><br>
         <input type="number" id="codigo" name="codigo"><br>
@@ -18,13 +18,13 @@
         <label for="apellido">Apellido:</label><br>
         <input type="text" id="apellido" name="apellido"><br>
         <!-- Edad -->
-        <label for="edad"></label><br>
+        <label for="edad">Edad:</label><br>
         <input type="number" id="edad" name="edad"><br>
         <!-- Correo electrónico -->
-        <label for="correoElectronico"></label><br>
+        <label for="correoElectronico">Correo Electronico:</label><br>
         <input type="email" id="correoElectronico" name="correoElectronico"><br>
         <!-- Teléfono -->
-        <label for="telefono"></label><br>
+        <label for="telefono">Telefono:</label><br>
         <input type="tel" id="telefono" name="telefono"><br>
         <!-- Un select para seleccionar un tema (HTML, CSS, JavaScript) -->
         <!-- tecnologías web fundamentales -->
@@ -34,8 +34,15 @@
             <option value="css">CSS3</option>
             <option value="javascript">JavaScript</option>   
         </select>
-
+        
+        <input type="submit" value="Guardar">
     </form>
+
+    
+    <h2>Datos del Alumno:</h2>
+    <p id="datosAlumno"></p>
+    
+    <button onclick="mostrarDatosAlumno(alumno)">Mostrar Alumnos</button>
 
     <script src="Actividad18.js"></script>
 </body>
