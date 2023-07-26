@@ -5,6 +5,4 @@ function pulsar(){
     var pPalabra=arr[0];
     var uPalabra=arr[arr.length-1];
     document.getElementById("resultado").innerHTML="Número de palabras: "+nPalabras+"</br> Primera palabra "+pPalabra+"</br> Ultima palabra: "+uPalabra;
-
-
 }
