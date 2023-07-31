@@ -44,15 +44,16 @@ window.addEventListener('load', () =>{
 
         }
 
-        boxInfo.insertBefore.style.display = "block";
+       
+        boxInfo.style.display = "block";
 
-        var iNombre = document.
+        var iNombre = document.querySelector("#iNombre span");
+        var iApellidos = document.querySelector("#iApellidos span");
+        var iEdad = document.querySelector("#iEdad span");
 
-    
-
-
-
-
+        iNombre.innerHTML = nombre;
+        iApellidos.innerHTML = apellido;
+        iEdad.innerHTML = edad;
 
     })
 
