@@ -64,6 +64,14 @@ document.getElementById('botonAñadir').addEventListener("click", function(event
 })
 
 // Editar alumnos
+
+
+
+
+
+
+
+
 window.addEventListener("load", () =>{
     let alumnoEd = document.getElementById('alumnoEditar');
     let alumnoEl = document.getElementById('alumnoEliminar');
