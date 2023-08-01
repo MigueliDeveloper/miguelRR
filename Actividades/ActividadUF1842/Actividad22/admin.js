@@ -64,6 +64,8 @@ document.getElementById('botonAñadir').addEventListener("click", function(event
 })
 
 // Editar alumnos
+const alumoEd = document.getElementById('alumnoEditar') 
+const atributoEd = document.getElementById('atributoEditar')
 
 
 
