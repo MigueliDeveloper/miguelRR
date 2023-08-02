@@ -9,8 +9,7 @@
 <body>
     <header id="headerApp">
         <div class="logo">
-            LOGO
-            <!-- <img src="" alt="Logo"> -->
+            <img src="../media/logo.jpg" alt="Logo">
         </div>
         <nav class="navMenu">
             <ul>
@@ -20,57 +19,51 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div>
-            <form action="" method="POST" id="formulario" onsubmit="return false">
-                <input type="text">
-                <input type="email">
-                <input type="text">
-                <input type="text">
-                <button>Enviar</button>
-            </form>
+    <main id="cuepoPrincipal">  
+        <div class="parteLateral">
+            <div class="acceder">
+                <h3>Nombre de Usuario</h3>
+                <p>Rol (Mago- Nivel 25)</p>
+            </div>
+            <div class="inscribete">
+                <img src="../media/imagen-curso.jpg" alt="">
+                <h4>Inscribete</h4>
+                <p>Lorem ipsum dolor sit, amet</p>
+                <button>Informacion</button>
+            </div>
         </div>
+    
+        <div class="informacionAcademia">
 
-        <!-- <div>
-            <form action="" method="POST" id="formulario" onsubmit="return false">
-    
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" name="nombre" id="nombre" required maxlength="50"><br>
-                <span id="errorNombre"></span>
-    
-                <label for="Apellidos">Apellidos:</label><br>
-                <input type="text" name="apellidos" id="apellidos" required maxlength="50"><br>
-                <span id="errorApellido"></span><br>
-    
-                <label for="edad">Edad:</label><br>
-                <input type="number" name="edad" id="edad"><br>
-                <span id="errorEdad"></span><br>
-    
-                <input type="submit" value="Enviar" id="submit"><br>
-    
-            </form>
-         </div> -->
+            <div id="formularioContacto">
+                <form action="" method="POST" id="formulario" onsubmit="return false">
+                    <!-- Nombre -->
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" required maxlength="50"><br>
+                    <span id="errorNombre"></span>
+                    <!-- Correo Electrónico -->
+                    <label for="email">Correo Electrónico: </label>
+                    <input type="email">
+                    <!-- Asunto -->
+                    > <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" required>
+                    <!-- Mensaje -->
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" cols="4" rows="4"></textarea>
+                    <!-- Enviar -->
+                    <input type="submit" value="Enviar" id="submit">Enviar<br>
+                </form>
+            </div>
+            <div>
+                <p>Texto Legal</p>
+            </div>
 
-
-        <div>
-            <p>Texto Legal</p>
+            </div>
         </div>
-
+            
     </main>
-    <aside>
-        <div>
-            <h3>Nombre de Usuario</h3>
-            <p>Rol (Mago- Nivel 25)</p>
-        </div>
-        <div>
-            <img src="" alt="">
-            <h4></h4>
-            <p></p>
-            <button></button>
-        </div>
-
-    </aside>
-    <footer>
+    
+    <footer id="footerId">
         <p>Todos lo derechos reservados</p>
     </footer>
     

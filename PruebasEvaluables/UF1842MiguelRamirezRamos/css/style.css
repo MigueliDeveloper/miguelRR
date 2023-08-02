@@ -1,5 +1,6 @@
 
 *{
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,19 +16,22 @@
 
 
 #headerApp {
+    height: 8vh;
     background-color: lightsalmon;
     display: flex;
+    /* flex-direction: row; */
     justify-content: space-between;
-    padding: 20px;
+    padding: 8px;
 }
 
 .logo img {
-    width: 100px;
+    width: 50px;
 }
 
 .navMenu ul{
     list-style: none;
     display: flex;
+    padding: 12px;
 }
 
 .navMenu ul li{
@@ -39,14 +43,160 @@
     color: #000; /* Cambia el color del texto según tus preferencias */
 }
 
+#cuerpoPrincipal{
+    display: flex;
+    height: 80vh;
+}
+
+
+.parteLateral{
+    background-color: lightseagreen;
+    width: 30%;
+    display: flex; 
+    flex-direction: column;
+    padding: 12px;
+    /* justify-content: center;  */
+    align-items: center;
+    
+}
+
+.acceder{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid white;
+    padding: 25px;
+    margin: 0;
+}
+
+.acceder h3{
+
+    padding: 12px;
+}
+
+.acceder button{
+    margin: 2px;
+    padding: 4px;
+}
+
+.inscribete{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 0px solid white;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    border-left: 4px solid white;
+    padding: 8px;
+}
+
+.inscribete img{
+    padding: 12px;
+    width: 485px;
+    border-radius: 20%;
+
+}
+
+.inscribete h4{
+    padding: 20px;
+}
+
+.inscribete p{
+    padding: 18px;   
+}
+
+.inscribete button{
+    padding: 10px;
+   
+}
+
+.informacionAcademia {
+    width: 70%;
+    background-image: url("../media/imagen-fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+.informacionAcademia video{
+    width: 1100px;
+    height: 650px;
+    padding: 70px;
+}
+
+
+
+.informacionAcademia h1{
+    padding: 20px;
+    font-size: 27px;
+
+}
+
+.informacionAcademia p{
+    padding: 20px;
+    font-size: 24px;
+
+}
+
+.informacionAcademia button{
+    padding: 2px;
+
+}
+    
+    
+
+
+/* CSS del formulario de la página de contacto*/
+/* #formularioContacto{
+   
+} */
+
+#formularioContacto label{
+    display: block;
+    margin-bottom: 10px;   
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+#formularioContacto button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#formularioContacto button:hover {
+    background-color: #45a049;
+}
+
+
 #footerId {
     background-color: lightsalmon;
+    padding: 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; */
     padding: 20px;
 }
 
 #footerId p{
-    display: flex;
+    text-align: center;
 }
