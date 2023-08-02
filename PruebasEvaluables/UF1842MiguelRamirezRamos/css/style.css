@@ -9,10 +9,11 @@
     font-size: 22px;
 }
 
-/* :root{
+:root{
+    --product-img: url('../media/avatar1.jpg');
+    --bg-color: #e5031d;
 
-
-} */
+} 
 
 
 #headerApp {
