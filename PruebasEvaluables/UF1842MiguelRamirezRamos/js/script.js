@@ -11,10 +11,10 @@ function obtenerAlmacenamientoLocal(llave){
 let alumnos = obtenerAlmacenamientoLocal('alumnos') || [];
 let mensaje = document.getElementById('mensaje');
 
-var añadirAlumno = document.getElementById('alumnoAñadir');
-var añadirApellido = document.getElementById('apellidoAñadir');
-var añadirEmail = document.getElementById('emailAñadir');
-var añadirImagen = document.getElementById('ImagenAñadir');
+var añadirAlumno = document.getElementById('nombre');
+var añadirApellido = document.getElementById('correoElectronico');
+var añadirEmail = document.getElementById('asunto');
+var añadirImagen = document.getElementById('mensaje');
 
 document.getElementById('botonAñadir').addEventListener("click", function(event){
     event.preventDefault();
@@ -45,9 +45,9 @@ document.getElementById('botonAñadir').addEventListener("click", function(event
     if(van == true){
         alumnoAñadir.push({
             nombre: alumnoAñadir,
-            apellido: apellidoAñadir,
-            email: emailAñadir,
-            urlImagen: imagenAñadir
+            correoElectronico: apellidoAñadir,
+            asunto: emailAñadir,
+            mensaje: imagenAñadir
 
         })
 
@@ -66,12 +66,6 @@ document.getElementById('botonAñadir').addEventListener("click", function(event
 // Editar alumnos
 const alumoEd = document.getElementById('alumnoEditar') 
 const atributoEd = document.getElementById('atributoEditar')
-
-
-
-
-
-
 
 window.addEventListener("load", () =>{
     let alumnoEd = document.getElementById('alumnoEditar');

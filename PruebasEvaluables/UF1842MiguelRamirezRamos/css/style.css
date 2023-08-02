@@ -142,7 +142,6 @@
 .informacionAcademia p{
     padding: 20px;
     font-size: 24px;
-
 }
 
 .informacionAcademia button{
@@ -150,16 +149,14 @@
 
 }
     
-    
-
 
 /* CSS del formulario de la página de contacto*/
 /* #formularioContacto{
    
 } */
 
-#formularioContacto label{
-    display: block;
+.formularioContacto label{
+    display: block; 
     margin-bottom: 10px;   
 }
 
@@ -173,7 +170,7 @@ textarea {
     margin-bottom: 10px;
 }
 
-#formularioContacto button {
+.formularioContacto button {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
@@ -182,7 +179,7 @@ textarea {
     cursor: pointer;
 }
 
-#formularioContacto button:hover {
+.formularioContacto button:hover {
     background-color: #45a049;
 }
 
@@ -193,7 +190,6 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: fixed; */
     padding: 20px;
 }
 
