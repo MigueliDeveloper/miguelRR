@@ -10,11 +10,11 @@
 }
 
 :root{
-    --product-img: url('../media/avatar1.jpg');
-    --bg-color: #e5031d;
+    --background-img:  url('../media/imagen-fondo.png'), url('../media/curso.jpg'), url('../media/contacto.jpg'), 
+                       url('../media/profesora.jpg'),url('../media/alumnos.jpg');
+    /* --bg-color: #e5031d; */
 
 } 
-
 
 #headerApp {
     height: 8vh;
@@ -117,7 +117,7 @@
 
 .informacionAcademia {
     width: 70%;
-    background-image: url("../media/imagen-fondo.png");
+    background-image: var(--background-img);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
