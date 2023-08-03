@@ -10,8 +10,8 @@
 }
 
 :root{
-    --background-img:  url('../media/imagen-fondo.png'), url('../media/curso.jpg'), url('../media/contacto.jpg'), 
-                       url('../media/profesora.jpg'),url('../media/alumnos.jpg');
+    --background-img:  url('../media/imagen-fondo.png'), url('../media/imagenCurso.jpg'), url('../media/curso.jpg'), 
+                       url('../media/contacto.jpg'), url('../media/profesora.jpg'),url('../media/alumnos.jpg');
     /* --bg-color: #e5031d; */
 
 } 
