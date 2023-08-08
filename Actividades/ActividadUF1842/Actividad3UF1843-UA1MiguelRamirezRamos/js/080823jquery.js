@@ -34,7 +34,7 @@ $(document).ready(function(){
  * usuario utilizando las librerías de JQuery. Puedes integrar:
  */
 
-// a) Un acordeón de información para recopilar toda la información de la web.
+    // a) Un acordeón de información para recopilar toda la información de la web.
 
     $(function(){
         $("#accordion").accordion();
@@ -42,12 +42,27 @@ $(document).ready(function(){
    
 
 
-// b) Mediante Tooltip para ampliar la información.
+    // b) Mediante Tooltip para ampliar la información.
     $(function(){
         $(document).tooltip();
 
-
     });
 
+    $(function(){
+        $('.puntosDraggable').draggable();
+    });
+    
+    // Parte Draggable
+    $( function(){
+        $(".puntosDraggable").draggable();
+        $("#droppable").droppable({
+            drop: function(event, ui){
+                $(this)
+                .addClass("ui-state-highlight")
+                .find("p")
+                .html("Dropped!" );
+            }
+        });
+    });
 
 });
