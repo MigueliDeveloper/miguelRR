@@ -82,6 +82,13 @@ footer{
     display: flex;
     justify-content: center;
 }
+
 footer img{
     width: 15em;
+}
+
+footer button {
+    height: 20px;
+    padding: 25px;
+    margin: 40px
 }
