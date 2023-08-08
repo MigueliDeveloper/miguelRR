@@ -31,6 +31,12 @@ $(document).ready(function(){
 
     })
 
+    $("#boton").click(function(){
+
+        $(this).addClass('highlight');
+
+    })
+
 
 
 })
