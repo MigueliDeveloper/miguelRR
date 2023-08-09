@@ -42,7 +42,7 @@ main{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  background-image: url('media/imagen-fondo.png');
+  background-image: url('../media/imagen-fondo.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -131,7 +131,7 @@ footer img{
     animation: desdeArriba 1s;
     
   }
-  @keyframes desdeArriba {
+@keyframes desdeArriba {
     from {
       transform: translateY(-50vh);
       opacity: 0;
@@ -140,5 +140,86 @@ footer img{
       transform: translateY(0);
       opacity: 1;
     }
-  }
+}
+
+#feedback { 
+  font-size: 1.4em; 
+}
+
+#selectable .ui-selecting { 
+  background: #FECA40; 
+}
+
+#selectable .ui-selected { 
+  background: #F39814; color: white; 
+}
+
+#selectable { 
+  list-style-type: none; margin: 0; padding: 0; width: 450px; 
+}
+
+#selectable li { 
+  margin: 3px; padding: 1px; float: left; width: 100px; height: 80px; font-size: 4em; text-align: center; 
+}
+
+/* Estilos de autocompletado */
+.custom-combobox {
+  position: relative;
+  display: inline-block;
+}
+.custom-combobox-toggle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-left: -1px;
+  padding: 0;
+}
+.custom-combobox-input {
+  margin: 0;
+  padding: 5px 10px;
+}
+
+.toggler { 
+  width: 500px; 
+  height: 200px; 
+  position: relative; 
+}
+
+#button { 
+  padding: .5em 1em; 
+  text-decoration: none; 
+}
+
+#effect { 
+  width: 240px; 
+  height: 170px; 
+  padding: 0.4em; 
+  position: relative; 
+  background: #fff; 
+}
+
+#effect h3 { 
+  margin: 0; 
+  padding: 0.4em; 
+  text-align: center;
+}
+
+.newClass { 
+  width: 240px;  
+  padding: 1em; 
+  letter-spacing: 0; 
+  margin: 0; 
+}
+
+.anotherNewClass { 
+  text-indent: 40px; 
+  letter-spacing: .2em; 
+  width: 410px; 
+  height: 100px; 
+  padding: 30px; 
+  margin: 10px; 
+  font-size: 1.1em; 
+}
+
+
 

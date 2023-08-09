@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.7.0.js"></script>
+    <script src="js/09082023.js"></script>
+    <script src="js/jquery-ui-1.13.2.custom/jquery-ui.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="js/jquery-ui-1.13.2.custom/jquery-ui.min.css"></script>
+    <link rel="stylesheet" href="css/estilosPPF_1843.css">
     <title>Ejercicio PPF - UF1843</title>
-    <link rel="stylesheet" href="estilos0708023_01.css">
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="jquery070823_01.js"></script>
-
 
 </head>
 <body>
@@ -28,62 +29,161 @@
             <button id="doce">12</button>
         </nav>
     </header>
-    <main>
-    
+    <main id="sortable">
         <div class="contenedor cont1">
             <h3 class="textcont1">Mostrar Avatar</h3>
             <p class="parrafocont">
                 Pulsa en el botón nro, 1 para ver el avatar.
             </p>
         </div>
+
         <div class="contenedor cont2">
-            <h3 class="textcont">Contenedor 2 de Sección 1</h3>
+            <h3 class="textcont">Sortable jQuery</h3>
             <p class="parrafocont">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat.
             </p>
         </div>
+
         <div class="contenedor cont3">
-            <h3 class="textcont">Contenedor 3 de Sección 1</h3>
+            <h3 class="textcont">Caja de Texto Redimensionable</h3>
+            <textarea id="resizable" rows="5" cols="20"></textarea>
             <p class="parrafocont">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat.
+                La Caja de Texto Redimensionable de jQuery permite ajustar el tamaño del campo de texto de forma fácil y rápida.
             </p>
         </div>
-   
+    
     
         <div class="contenedor cont4">
-            <h3 class="textcont">Contenedor 1 de Sección 2</h3>
+            <h3 class="textcont">Selectable</h3>
+            
+            <ol id="selectable">
+                <li class="ui-state-default">1</li>
+                <li class="ui-state-default">2</li>
+                <li class="ui-state-default">3</li>
+                <li class="ui-state-default">4</li>
+                <li class="ui-state-default">5</li>
+                <li class="ui-state-default">6</li>
+                <li class="ui-state-default">7</li>
+                <li class="ui-state-default">8</li>
+                <li class="ui-state-default">9</li>
+                <li class="ui-state-default">10</li>
+                <li class="ui-state-default">11</li>
+                <li class="ui-state-default">12</li>
+              </ol>
+            
             <p class="parrafocont">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat.
+                
+                "Selectable jQuery UI es una biblioteca de JavaScript que permite seleccionar elementos de una lista o cuadrícula con facilidad, 
+                brindando una experiencia de usuario interactiva y personalizable. 
+                Es una herramienta útil para mejorar la usabilidad y la funcionalidad de tus 
+                aplicaciones web."
             </p>
         </div>
+
         <div class="contenedor cont5">
-            <h3 class="textcont">Contenedor 2 de Sección 2</h3>
-            <p class="parrafocont">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat.
-            </p>
+            <h3 class="textcont">Autocomplete</h3>
+            <div class="ui-widget">
+                <label>Su lenguaje de programación preferido: </label>
+                <select id="combobox">
+                  <option value>Seleccionar uno...</option>
+                  <option value="ActionScript">ActionScript</option>
+                  <option value="AppleScript">AppleScript</option>
+                  <option value="Asp">Asp</option>
+                  <option value="BASIC">BASIC</option>
+                  <option value="C">C</option>
+                  <option value="C++">C++</option>
+                  <option value="Clojure">Clojure</option>
+                  <option value="COBOL">COBOL</option>
+                  <option value="ColdFusion">ColdFusion</option>
+                  <option value="Erlang">Erlang</option>
+                  <option value="Fortran">Fortran</option>
+                  <option value="Groovy">Groovy</option>
+                  <option value="Haskell">Haskell</option>
+                  <option value="Java">Java</option>
+                  <option value="JavaScript">JavaScript</option>
+                  <option value="Lisp">Lisp</option>
+                  <option value="Perl">Perl</option>
+                  <option value="PHP">PHP</option>
+                  <option value="Python">Python</option>
+                  <option value="Ruby">Ruby</option>
+                  <option value="Scala">Scala</option>
+                  <option value="Scheme">Scheme</option>
+                </select>
+              </div>
+              <button id="toggle">Mostrar selección subyacente</button>
+        
         </div>
+
+
         <div class="contenedor cont6">
-            <h3 class="textcont">Contenedor 3 de Sección 2</h3>
+            <h3 class="textcont">Color Animation</h3>
+            <div class="toggler">
+                <div id="effect" class="ui-widget-content ui-corner-all">
+                  <h3 class="ui-widget-header ui-corner-all">Animate</h3>
+                  <p>
+                    Etiam libero neque, luctus a, eleifend nec, semper at, lorem.
+                  </p>
+                </div>
+            </div>
+            <button id="button" class="ui-state-default ui-corner-all">Toggle Effect</button>
+ 
             <p class="parrafocont">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat.
             </p>
         </div>
-   
+    
     
         <div class="contenedor cont7">
-            <h3 class="textcont">Contenedor 1 de Sección 3</h3>
+            <h3 class="textcont">Easing</h3>
+            <div id="graphs"></div>
             <p class="parrafocont">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat.
             </p>
         </div>
         <div class="contenedor cont8">
-            <h3 class="textcont">Contenedor 2 de Sección 3</h3>
+            <h3 class="textcont">Show</h3>
+
+            <div class="toggler">
+                <div id="effect" class="ui-widget-content ui-corner-all">
+                  <h3 class="ui-widget-header ui-corner-all">Show</h3>
+                  <p>
+                    Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.
+                  </p>
+                </div>
+              </div>
+               
+              <select name="effects" id="effectTypes">
+                <option value="blind">Blind</option>
+                <option value="bounce">Bounce</option>
+                <option value="clip">Clip</option>
+                <option value="drop">Drop</option>
+                <option value="explode">Explode</option>
+                <option value="fade">Fade</option>
+                <option value="fold">Fold</option>
+                <option value="highlight">Highlight</option>
+                <option value="puff">Puff</option>
+                <option value="pulsate">Pulsate</option>
+                <option value="scale">Scale</option>
+                <option value="shake">Shake</option>
+                <option value="size">Size</option>
+                <option value="slide">Slide</option>
+              </select>
+               
+              <button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
             <p class="parrafocont">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat.
             </p>
         </div>
+
         <div class="contenedor cont9">
             <h3 class="textcont">Contenedor 3 de Sección 3</h3>
+            <div class="toggler">
+            <div id="effect" class="newClass ui-corner-all">
+                Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede.
+            </div>
+            </div>
+            <button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
+ 
             <p class="parrafocont">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat.
             </p>
@@ -91,30 +191,83 @@
     
         <div class="contenedor cont10">
             <h3 class="textcont">Sección 4</h3>
+            <div class="toggler">
+                <div id="effect" class="newClass ui-corner-all">
+                    Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede.
+                </div>
+              </div>
+              <button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
             <p class="parrafocont">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat.
             </p>
         </div>
         <div class="contenedor cont11">
             <h3 class="textcont">Contenedor 2 de Sección 4</h3>
+            <div class="toggler">
+                <div id="effect" class="ui-widget-content ui-corner-all">
+                  <h3 class="ui-widget-header ui-corner-all">Toggle</h3>
+                  <p>
+                    Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.
+                  </p>
+                </div>
+              </div>
+               
+              <select name="effects" id="effectTypes">
+                <option value="blind">Blind</option>
+                <option value="bounce">Bounce</option>
+                <option value="clip">Clip</option>
+                <option value="drop">Drop</option>
+                <option value="explode">Explode</option>
+                <option value="fade">Fade</option>
+                <option value="fold">Fold</option>
+                <option value="highlight">Highlight</option>
+                <option value="puff">Puff</option>
+                <option value="pulsate">Pulsate</option>
+                <option value="scale">Scale</option>
+                <option value="shake">Shake</option>
+                <option value="size">Size</option>
+                <option value="slide">Slide</option>
+              </select>
+               
+              <button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
             <p class="parrafocont">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat.
             </p>
         </div>
         <div class="contenedor cont12">
             <h3 class="textcont">Contenedor 3 de Sección 4</h3>
+            <div id="tabs">
+                <ul>
+                  <li><a href="#tabs-1">Nunc tincidunt</a></li>
+                  <li><a href="#tabs-2">Proin dolor</a></li>
+                  <li><a href="#tabs-3">Aenean lacinia</a></li>
+                </ul>
+                <div id="tabs-1">
+                  <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                </div>
+                <div id="tabs-2">
+                  <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+                </div>
+                <div id="tabs-3">
+                  <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                  <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                </div>
+              </div>
+            
             <p class="parrafocont">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, quaerat.
             </p>
         </div>
-   
+     
+       
 </main>
     <div id="modal_container"></div>
     <footer>
+     
         <img src="media/logo_m.png" alt="Logo de la página ">
     </footer>
 
-    <script src="js070823_01.js"></script>
+    <script src="js/modales.js"></script>
 
 </body>
 </html>
