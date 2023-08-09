@@ -29,7 +29,7 @@ $(document).ready(function(){
     // Selector por etiqueta
     $('[title="Google"]').css("color","red")
 
-    // Eventos
+    // Eventos1
     // var contenedor = $('#contenedor');
     // contenedor
     // .css("color", "white");
