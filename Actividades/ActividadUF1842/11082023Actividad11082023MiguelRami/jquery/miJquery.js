@@ -1,39 +1,191 @@
 $(document).ready(function(){
     // Formulario de  acceso
+    $('.acceso').click(function(){
+
+        var formulario = $('#formularioAcceso-container');
+
+        $('#formularioAcceso-container').empty();
+
+        // Añadir campos al formulario
+        formulario.append('<form> <label for="correoElectronico">Correo Electrónico:</label>');
+        formulario.append('<input type="email" name="correoElectonico" id="correoElectronico"/>');
+
+        formulario.append('<label for="contrasena">Contraseña:</label>');
+        formulario.append('<input type="password" name="contrasena" id="contrasena"/ >');
+
+        formulario.append('<input type="submit" value="Iniciar sesión"> </form>');
+
+        // Agregar el formulario al contenedor
+        $('#formularioAcceso-container').append(formulario);
+
+    });
+
 
     // Formulario de Registro
-    var formulario = $('#formulario-container');
+    $('.registro').click(function(){
 
-    // Añadir campos al formulario
-    formulario.append('<form><label for="codigo">Código:</label>');
-    formulario.append(' <input type="number" name="codigo" id="codigo"/>');
+        var formulario = $('#formulario-container');
 
-    formulario.append('<label for="nombre">Nombre:</label>');
-    formulario.append('<input type="text" name="nombre" id="nombre" placeholder="Nombre"/>');
+        $('#formulario-container').empty();
 
-    formulario.append('<label for="apellidos">Apellidos:</label>');
-    formulario.append('<input type="text" name="apellidos" id="apellidos"/>');
+        // Añadir campos al formulario
+        formulario.append('<form><label for="codigo">Código:</label>');
+        formulario.append(' <input type="number" name="codigo" id="codigo"/>');
+    
+        formulario.append('<label for="nombre">Nombre:</label>');
+        formulario.append('<input type="text" name="nombre" id="nombre" placeholder="Nombre"/>');
+    
+        formulario.append('<label for="apellidos">Apellidos:</label>');
+        formulario.append('<input type="text" name="apellidos" id="apellidos"/>');
+    
+        formulario.append('<label for="correoElectronico">Correo Electrónico:</label>');
+        formulario.append('<input type="email" name="correoElectonico" id="correoElectronico"/>');
+    
+        formulario.append('<label for="edad">Edad:</label>');
+        formulario.append('<input type="number" name="edad" id="edad"');
+    
+        formulario.append('<input type="submit" value="Registrar"></form>')
+    
+        // Inyectar el formulario en el contenedor
+        $('#formulario-container').append(formulario);
+  
+    });
 
-    formulario.append('<label for="correoElectronico">Correo Electrónico:</label>');
-    formulario.append('<input type="email" name="correoElectonico" id="correoElectronico"/>');
+    // Parte Ajax formulario de registro
+    $.get("https://reqres.in/api/users", { page: 2}, function(respuesta) {
+        respuesta.data.forEah((element, index) => {
+            $('#datos').append("<p>"+element.first_name+" "+ element.last_name + "</p>");
+            
+            
+        });
+    });
 
-    formulario.append('<label for="edad">Edad:</label>');
-    formulario.append('<input type="number" name="edad" id="edad"');
+    $('#formulario-container').submit(function(e){
+        e.preventDefault();
+        var usuario = {
+            codigo: $('input[name="codigo"]').val(),
+            nombre: $('input[name="nombre"]').val(),
+            apellidos: $('input[name="apellidos"]').val(),
+            correoElectronico: $('input[name="correoElectronico"]').val(),
+            edad: $('input[name="edad"]').val(),
+            fotografia: $('input[name="fotografia"]').val(),
+        };
 
-    formulario.append('<input type="submit" value="Registrar"></form>')
+        $.ajax({
+            type: 'POST',
+            url: $(this).attr("action"),
+            data: usuario,
+            beforeSend: function(){
+                console.log("Enviando usuario...") 
+            },
+            succes: function(respuesta){
+                console.log(respuesta)
 
-    // Inyectar el formulario en el contenedor
-    $('#formulario-container').append(formulario);
+            },
+            error: function(){
+                console.log("Ha ocurrido un error")
+            },
+            timeout: 1000
 
 
+        })
+
+    });   
+
+    // Función información
+    $('.informacion').click(function(){
+
+        var cuadroDeDialogo = $('#cuadroDeDialogo');
+
+        $('#cuadroDeDialogo').empty();
+
+        cuadroDeDialogo.append('');
+        cuadroDeDialogo.append('');
+
+        /**
+         * <div class="informacionAcademia">
+        <div>
+            <!-- <img src="" alt=""> -->
+            <h1>Entra en nuestra Academia</h1>
+            <p>Crea tu Itinerario Formativo</p>
+            <button>Información</button>
+        </div>
+    </div>
+         * 
+         */
+        
+    
+
+    });
+
+    // Función curso
+    $('.curso').click(function(){
+
+        var cuadroDeDialogo = $('#cuadroDeDialogo');
+
+        $('#cuadroDeDialogo').empty();
+
+        cuadroDeDialogo.append('');
+        cuadroDeDialogo.append('');
+
+        // <div class="informacionAcademia">
+        // <div>
+        //     <video src="media/VideoClase.mp4" controls></video>
+        // </div>
+        // <p>Esto es un video</p>
+        // </div>
+
+    });
+
+    // Función contacto
+    $('.contacto').click(function(){
+
+        var cuadroDeDialogo = $('#cuadroDeDialogo');
+
+        $('#cuadroDeDialogo').empty();
+
+        cuadroDeDialogo.append('');
+        cuadroDeDialogo.append('');
+
+        /**
+         * <div class="informacionAcademia">
+        <div class="formularioContacto">
+            <form action="" method="POST" id="formulario" onsubmit="return false">
+         
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required maxlength="50"><br>
+                <span id="errorNombre"></span>
+          
+                <label for="email">Correo Electrónico: </label>
+                <input type="email" id="correoElectronico">
+         
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+       
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" cols="4" rows="4"></textarea>
+    
+                <button id="botonAnadir" onclick="anadir()">Enviar</button>
+            </form>
+        </div> 
+        <div>
+            <p>Texto Legal</p>
+        </div>
+    </div>   
+         * 
+         */
+
+
+
+    });
     
     // función acordeón
     $(function(){
-        $("#accordion").accordion();
+        $(".accordion").accordion();
     });
 
     //Modo Oscuro 
-    $(".botonConstraste").click(function(){
+    $(".botonContraste").click(function(){
         estadoContraste =!estadoContraste;
 
         if(estadoConstraste){

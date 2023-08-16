@@ -20,23 +20,16 @@
         <nav class="navMenu">
             <ul>
                 <li><button><a href="index.html">Inicio</a></button></li>
-                <li><button onclick="acceso()">Acceso</button></li>
-                <li><button onclick="registro()">Registro</button></li>
-                <li><button onclick="informacion()">Información</button></li>
-                <li><button onclick="curso()">Curso</button></li>
-                <li><button onclick="contacto()">Contacto</button></li>
-                <li><a href="#" class="enlace" title="Primer enlace">Enlace 1</a></li>
-                
+                <li><button class="acceso">Acceso</button></li>
+                <li><button class="registro">Registro</button></li>
+                <li><button class="informacion">Información</button></li>
+                <li><button class="curso">Curso</button></li>
+                <li><button class="contacto">Contacto</button></li>   
+                <li><button class="botonContraste">Modo Oscuro</button></li>   
             </ul>
         </nav>
     </header>
     <main id="cuerpoPrincipal">
-        
-
-        <div id="formulario-container" action="form-group" action="https://reqres.in/api/users" method="post">
-            
-
-        </div>
         <div class="parteLateral">
             <div class="accordion">
                 <h3>Tema 1</h3>
@@ -59,12 +52,29 @@
                 </p>
             </div> 
         </div>
+        
+        <div class="parteCentralFormularios">
+             <!-- Formulario de Acceso -->
+             <div id="formularioAcceso-container" class="formulario">
+
+             </div>
+ 
+             <!-- Formulario de regitro -->
+             <div id="formulario-container" class="formulario" action="form-group" action="https://reqres.in/api/users" method="post">
+                     
+             </div>
+
+             <div id="cuadroDeDialogo">
+
+             </div>
+        </div>
+           
+        
     </main>
     
     <footer id="footerId">
         <p>Todos lo derechos reservados</p>
     </footer>
-    
-   
+
 </body>
 </html>
