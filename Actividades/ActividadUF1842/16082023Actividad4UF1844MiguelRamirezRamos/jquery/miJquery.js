@@ -198,6 +198,33 @@ $(document).ready(function(){
         }
            
     });
-    
-        
+
+
+    // Parte de guardar usuario en JSon en localStorage
+    var usuario = {
+        codigo: "00000",
+        nombre: "Juan",
+        apellidos: "Lopez Lopez",
+        correoElectronico: "juanlopez@lopez.com",
+        edad: "125"
+    }
+
+    // LocaStorage 
+    // Comprobación de la disponibilidad del LocalStorage
+    if(typeof(Storage) !== 'undefined'){
+        console.log("Disponible");
+    }else{
+        console.log("No disponible");
+    }
+
+    // Guardar datos
+    // localStorage.setItem("Listado", "Listado de Usuario");
+
+    // Recuperar datos
+    // localStorage.getItem("Listado");
+
+    //Guardar objetos
+    localStorage.setItem("usuario", JSON.stringify(usuario));
+
+    // var usuariojs = JSON.parse(localStorage.getItem("usuario"));   
 });
