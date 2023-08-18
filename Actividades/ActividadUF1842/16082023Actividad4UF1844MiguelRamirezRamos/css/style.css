@@ -113,6 +113,21 @@ textarea {
     margin-bottom: 10px;
 }
 
+/* .informacionAcademia video{
+    width: 1100px;
+    height: 650px;
+    padding: 70px;
+
+} */
+
+.video{
+    width: 800px;
+    height: 650px;
+    padding: 70px;
+
+
+}
+
 .formulario button{
     background-color: #4CAF50;
     color: white;

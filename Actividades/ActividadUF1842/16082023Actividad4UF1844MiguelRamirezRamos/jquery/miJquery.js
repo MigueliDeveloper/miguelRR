@@ -133,7 +133,7 @@ $(document).ready(function(){
 
 
             cuadroDeDialogo.append('<div class="informacionAcademia"');
-            cuadroDeDialogo.append('<div><video src="media/VideoClase.mp4" controls></div>');
+            cuadroDeDialogo.append('<div><video class="video" src="media/VideoClase.mp4" controls></div>');
             cuadroDeDialogo.append('<p>Esto es un video</p>');
             cuadroDeDialogo.append('</div>');
 
@@ -175,7 +175,7 @@ $(document).ready(function(){
        
         // Verificar si el modo oscuro está activado
         var modoOscuro = $("*").css("background-color") === "rgb(0, 0, 0)";
-
+        var root = document.querySelector(":root");
         if(modoOscuro){
 
             // Cambiar a estilos normales
@@ -193,6 +193,8 @@ $(document).ready(function(){
              $("*").css("color", "white");
              $(".enlace").css("color", "white");
              $("*").css("font-size", "30px");
+            root.setProperty("-background-img","../media/OIP.jpg");
+            //  $("*").css("background-image", "");
               // $("#accordion").css("background-color", "black");
             // estadoContraste = true;
         }

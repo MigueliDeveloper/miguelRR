@@ -1,0 +1,8 @@
+// Clase
+class Camiseta{
+    //Propiedades
+
+
+
+
+}
