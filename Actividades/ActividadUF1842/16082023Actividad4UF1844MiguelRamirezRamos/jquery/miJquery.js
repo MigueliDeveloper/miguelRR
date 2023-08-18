@@ -183,6 +183,7 @@ $(document).ready(function(){
             $("*").css("color", "");
             $(".enlace").css("color", "");
             $("*").css("font-size", "");
+            root.style.setProperty("--background-img","url('../media/imagen-fondo.png')");
             $(".botonContraste").text("Modo Oscuro");
 
 
@@ -193,7 +194,7 @@ $(document).ready(function(){
              $("*").css("color", "white");
              $(".enlace").css("color", "white");
              $("*").css("font-size", "30px");
-            root.setProperty("-background-img","../media/OIP.jpg");
+            root.style.setProperty("--background-img","url('')");
             //  $("*").css("background-image", "");
               // $("#accordion").css("background-color", "black");
             // estadoContraste = true;
