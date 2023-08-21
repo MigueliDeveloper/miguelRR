@@ -11,7 +11,7 @@ $(document).ready(function(){
         formulario.append('<input type="email" name="correoElectonico" id="correoElectronico"/>');
 
         formulario.append('<label for="contrasena">Contraseña:</label>');
-        formulario.append('<input type="password" name="contrasena" id="contrasena"/ >');
+        formulario.append('<input type="password" name="contrasena" id="contrasena"/>');
 
         formulario.append('<input type="submit" value="Iniciar sesión"> </form>');
 

@@ -14,7 +14,11 @@ export class CursosComponent {
   constructor(){
     this.nombre= "Programación"
     this.listado= "Listado de Curso"
+  }
 
+  cambiarTitulo(){
+
+    this.nombre = "Programacion en Angular"
   }
 
 }
