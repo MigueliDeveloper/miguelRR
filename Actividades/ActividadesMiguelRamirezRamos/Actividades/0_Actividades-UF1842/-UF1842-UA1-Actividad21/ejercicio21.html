@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosEjercicios21.css">
+    <script src="ejercicio.js"></script>
+    <title>Validación Ajax | Actividad 21</title>
+</head>
+<body>
+
+    <!-- 
+        1.- Formulario: Nombrem Apellidos y edad
+        2.- Botón
+        3.-
+        4.- -Validación del Formulario
+
+     -->
+     <div>
+        <form action="" method="POST" id="formulario" onsubmit="return false">
+
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" name="nombre" id="nombre" required maxlength="50"><br>
+            <span id="errorNombre"></span>
+
+            <label for="Apellidos">Apellidos:</label><br>
+            <input type="text" name="apellidos" id="apellidos" required maxlength="50"><br>
+            <span id="errorApellido"></span><br>
+
+            <label for="edad">Edad:</label><br>
+            <input type="number" name="edad" id="edad"><br>
+            <span id="errorEdad"></span><br>
+
+            <input type="submit" value="Enviar" id="submit"><br>
+
+        </form>
+     </div>
+
+     <div class="box info">
+        <h3>Información del usuario</h3>
+        <hr>
+
+        <p id="iNombre">
+            Nombre: <span></span>
+        </p>
+
+        <p id="iApellidos">
+            Apellidos: <span></span>
+        </p>
+
+        <p id="iEdad">
+            Edad: <span></span>
+        </p>
+     </div>
+</body>
+</html>

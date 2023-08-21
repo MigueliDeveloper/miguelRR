@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 18</title>
+</head>
+<body>
+    
+    <form name="formulario" id="alumnoForm">
+        <!-- Código -->
+        <label for="codigo"></label><br>
+        <input type="number" id="codigo" name="codigo"><br>
+        <!-- Nombre-->
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br>
+        <!-- Apellido -->
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido"><br>
+        <!-- Edad -->
+        <label for="edad">Edad:</label><br>
+        <input type="number" id="edad" name="edad"><br>
+        <!-- Correo electrónico -->
+        <label for="correoElectronico">Correo Electronico:</label><br>
+        <input type="email" id="correoElectronico" name="correoElectronico"><br>
+        <!-- Teléfono -->
+        <label for="telefono">Telefono:</label><br>
+        <input type="tel" id="telefono" name="telefono"><br>
+        <!-- Un select para seleccionar un tema (HTML, CSS, JavaScript) -->
+        <!-- tecnologías web fundamentales -->
+        <label for="tecnologiasWeb">Selecciona una Tecnología Web Fundamental:</label>
+        <select name="tecnologiasWeb" id="tecnologiasWeb">
+            <option value="html">HTML5</option>
+            <option value="css">CSS3</option>
+            <option value="javascript">JavaScript</option>   
+        </select>
+        
+        <input type="submit" value="Guardar">
+    </form>
+
+    
+    <h2>Datos del Alumno:</h2>
+    <p id="datosAlumno"></p>
+    
+    <button onclick="mostrarDatosAlumno(alumno)">Mostrar Alumnos</button>
+
+    <script src="Actividad18.js"></script>
+</body>
+</html>
+
+<!--
+ * 1.	Crear un documento html con un formulario para pedir los datos de los alumnos:
+ * a.	Código
+ * b.	Nombre y Apellidos
+ * c.	Edad
+ * d.	Correo electrónico
+ * e.	Teléfono
+ * f.	Un select para seleccionar un tema (HTML, CSS, JavaScript)
+ * 2.	Crear un script para ir rellenando un array con los datos de un alumno.
+ * 3.	Mostrar los datos del alumno en el documento html.
+ 
+-->

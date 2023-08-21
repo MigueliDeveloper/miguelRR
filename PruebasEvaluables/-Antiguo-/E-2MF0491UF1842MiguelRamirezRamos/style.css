@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+header{
+    margin-bottom: 400px;
+}
+
+header nav{
+    margin-bottom: 700px;
+}
+
+#contenedorMain {
+
+    margin-top: 425px;
+    /* background-color: lightgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 20vh;
+
+}
+
+#ejercicios{
+
+    padding-top: 12px;
+   
+}
+
+/* #ejercicios .ejercicio18{
+
+
+
+} */
+
+
+
+#cambioDeImagen img{
+
+    width: 250px;
+
+}
+
+#matrix{
+
+    width: 250px;
+}
