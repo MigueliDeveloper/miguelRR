@@ -137,9 +137,9 @@ $(document).ready(function(){
         $('#cuadroDeDialogo').empty();
 
         cuadroDeDialogo.append('<form action="" method="POST" id="formulario" onsubmit="return false"> ');
-        cuadroDeDialogo.append('<label for="nombre>Nombre</label> ');
+        cuadroDeDialogo.append('<label for="nombre">Nombre</label> ');
         cuadroDeDialogo.append('<input type="text" name="name" id="nonbre" required maxlength="50"><br>');
-        cuadroDeDialogo.append('<span id="errorNombre></span>');
+        cuadroDeDialogo.append('<span id="errorNombre"></span>');
         cuadroDeDialogo.append('<label form="email">Correo Electrónico: </label>');
         cuadroDeDialogo.append('<input type="text" id="asunto" name="asunto" required>');
         cuadroDeDialogo.append('<label for="asunto">Asunto:</label>');
