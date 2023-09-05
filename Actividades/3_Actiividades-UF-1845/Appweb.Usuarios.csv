@@ -1,0 +1,3 @@
+_id,nombre,edad,correo electronico,numero de telefono,foto,estado,nota alumno
+64f615486a6d8c773aa8faa1,Manuel,54,manuelmacpe@gmail.com,667936811,./assets/media/fotommp.jpg,true,6
+64f616c16a6d8c773aa8faa2,Miguel,39,miguelrr@gmail.com,123456789,./assets/media/fotommp.jpg,true,8
