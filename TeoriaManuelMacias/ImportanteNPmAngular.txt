@@ -1,0 +1,7 @@
+Arrancar el servidor: 
+
+npm start
+
+crear los archivos json en el servidor:
+
+npm init
